@@ -50,7 +50,7 @@ def get_fake_ecity():
 #Step-5 Mobile number should contains exactly 10-digits where first number should be 5 to 7.
 
 def get_fake_ephoneNumber():
-    mobilenum=rdm.choice('5,6,7')
+    mobilenum=str(rdm.randint(5,7))
     for i in range(10):
         mobilenum=mobilenum+str(rdm.randint(0,9))
     return mobilenum
